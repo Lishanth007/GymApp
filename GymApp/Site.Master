@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GymApp.SiteMaster" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Gym Membership System</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="padding: 20px;">
+            <h2>GYM MEMBERSHIP & ONLINE FEE SYSTEM</h2>
+            <p>
+                <a href="Home.aspx">Home</a> | 
+                <a href="Plans.aspx">Membership Plans</a> | 
+                <a href="Enroll.aspx">Enroll / Renew</a> | 
+                <a href="FeeSummary.aspx">Fee Summary</a> | 
+                <a href="PaymentHistory.aspx">Payment History</a>
+            </p>
+            <hr />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
